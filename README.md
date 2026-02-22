@@ -40,16 +40,17 @@ S3 → Lambda → DynamoDB → SNS → Email
 ---
 
 ## 📂 Project Structure
+
+```
 aws-serverless-csv-pipeline/
 │
 ├── lambda/
-│ └── lambda_function.py
+│   └── lambda_function.py
 │
-├── architecture/
-│ └── architecture-diagram.png
-│
-└── README.md
-
+├── requirements.txt
+├── README.md
+└── LICENSE
+```
 
 ---
 
@@ -73,13 +74,25 @@ Can be extended for data validation, ETL pipelines, analytics workflows, and mon
 
 ---
 
+## 🔐 Environment Variables
+
+| Variable | Description |
+|----------|------------|
+| SNS_TOPIC_ARN | ARN of SNS topic for email alerts |
+
+---
+
 ## 📈 Future Improvements
 
 - Row-threshold alerting (e.g., alert if rows > 100)
 - Daily summary reports
 - Error alerting system
 - S3 lifecycle automation
+- Infrastructure as Code using Terraform
+- CI/CD deployment pipeline
 
 ---
 
 Built as part of hands-on Cloud Engineering practice.
+
+Deployed and tested using AWS Free Tier.
