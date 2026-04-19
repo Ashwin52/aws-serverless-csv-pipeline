@@ -1,4 +1,4 @@
-# AWS Serverless CSV Processing Pipeline 🚀
+# AWS Serverless CSV Processing Pipeline 
 
 An event-driven serverless data pipeline built using AWS services.
 
@@ -11,13 +11,13 @@ When a CSV file is uploaded to Amazon S3:
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 S3 → Lambda → DynamoDB → SNS → Email
 
 ---
 
-## 🔹 Features
+## Features
 
 - Automatic trigger on CSV upload
 - Real-time row count calculation
@@ -28,7 +28,7 @@ S3 → Lambda → DynamoDB → SNS → Email
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - AWS S3
 - AWS Lambda (Python 3.10)
@@ -39,7 +39,7 @@ S3 → Lambda → DynamoDB → SNS → Email
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 aws-serverless-csv-pipeline/
@@ -54,7 +54,7 @@ aws-serverless-csv-pipeline/
 
 ---
 
-## ⚙ How It Works
+## How It Works
 
 1. User uploads a CSV file to S3.
 2. S3 event triggers Lambda.
@@ -67,14 +67,14 @@ aws-serverless-csv-pipeline/
 
 ---
 
-## 💡 Use Case
+## Use Case
 
 Automated monitoring and processing of uploaded CSV files in real time.  
 Can be extended for data validation, ETL pipelines, analytics workflows, and monitoring systems.
 
 ---
 
-## 🔐 Environment Variables
+## Environment Variables
 
 | Variable | Description |
 |----------|------------|
@@ -82,7 +82,7 @@ Can be extended for data validation, ETL pipelines, analytics workflows, and mon
 
 ---
 
-## 📈 Future Improvements
+## Future Improvements
 
 - Row-threshold alerting (e.g., alert if rows > 100)
 - Daily summary reports
